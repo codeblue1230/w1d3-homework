@@ -1,0 +1,404 @@
+body {
+    margin: 0;
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "nav1 nav2 nav3 nav4 nav5 nav6";
+    background-color: black;
+    color: white;
+    height: 8vh;
+    width: auto;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-container li {
+    justify-self: left;
+    align-self: center;
+    padding: 1vh 1vw 1vh 1vw;
+    min-height: 3vh;
+    font-size: 1.25em;
+    padding-top: 2vh;
+} 
+
+.nav1 {
+    grid-area: nav1;
+}
+
+.nav2 {
+    grid-area: nav2;
+}
+
+.nav3 {
+    grid-area: nav3;
+}
+
+.nav4 {
+    grid-area: nav4;
+}
+
+.nav5 {
+    grid-area: nav5;
+}
+
+.nav6 {
+    grid-area: nav6;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+}
+
+.main-image {
+    background-image: url(../images/theater-image-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    width: 100%;    
+}
+
+.main-image-text {
+    color: white;
+    font-size: 6em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1 {
+    margin: 15vh 10vw 5vh 10vw;
+    border: solid 1px rgb(199, 199, 199);
+    background-color: #F7F7F7;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "left middle right";
+    margin: 0 10vw 5vh 10vw;
+}
+
+.main-container div { 
+    align-self: center;
+}
+
+.main-left {
+    grid-area: left;
+    justify-self: left;
+}
+
+.main-center {
+    grid-area: middle;
+    justify-self: left;
+    list-style-type: none;
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left: 0;
+    margin-top: 0; 
+}
+
+.main-center li {
+    padding-bottom: 3px;
+    align-self: start;
+
+}
+
+#cen-head {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.main-right {
+    grid-area: right;
+    justify-self: right;
+}
+
+.main-left img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-right > button {
+    height: 8vh;
+    width: 10vw;
+    background-color: #EEBF3A;
+    overflow: inherit;
+    color: white;
+    font-size: 15pt;
+    min-width: 100px;
+    min-height: 50px;
+}
+
+hr {
+    margin: 5vh 10vw 7vh 10vw;
+}
+
+.second-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "left middle right";
+    margin: 0 10vw 5vh 10vw;
+}
+
+.second-main div { 
+    align-self: center;
+}
+
+.second-left {
+    grid-area: left;
+    justify-self: left;
+}
+
+.second-center {
+    grid-area: middle;
+    justify-self: left;
+    list-style-type: none;
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left: 0;
+    margin-top: 0; 
+}
+
+.second-center li {
+    padding-bottom: 3px;
+    align-self: start;
+
+}
+
+#second-cen {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.second-right {
+    grid-area: right;
+    justify-self: right;
+}
+
+.second-left img {
+    height: 100%;
+    width: 100%;
+}
+
+.second-right > button {
+    height: 8vh;
+    width: 10vw;
+    background-color: #EEBF3A;
+    overflow: inherit;
+    color: white;
+    font-size: 15pt;
+    min-width: 100px;
+    min-height: 50px;
+}
+
+.third-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "left middle right";
+    margin: 0 10vw 5vh 10vw;
+}
+
+.third-main div { 
+    align-self: center;
+}
+
+.third-left {
+    grid-area: left;
+    justify-self: left;
+}
+
+.third-center {
+    grid-area: middle;
+    justify-self: left;
+    list-style-type: none;
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left: 0;
+    margin-top: 0; 
+}
+
+.third-center li {
+    padding-bottom: 3px;
+    align-self: start;
+
+}
+
+#third-cen {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.third-right {
+    grid-area: right;
+    justify-self: right;
+}
+
+.third-left img {
+    height: 100%;
+    width: 100%;
+}
+
+.third-right > button {
+    height: 8vh;
+    width: 10vw;
+    background-color: #EEBF3A;
+    overflow: inherit;
+    color: white;
+    font-size: 15pt;
+    min-width: 100px;
+    min-height: 50px;
+}
+
+.fourth-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "left middle right";
+    margin: 0 10vw 5vh 10vw;
+}
+
+.fourth-main div { 
+    align-self: center;
+}
+
+.fourth-left {
+    grid-area: left;
+    justify-self: left;
+}
+
+.fourth-center {
+    grid-area: middle;
+    justify-self: left;
+    list-style-type: none;
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left: 0;
+    margin-top: 0; 
+}
+
+.fourth-center li {
+    padding-bottom: 3px;
+    align-self: start;
+
+}
+
+#fourth-cen {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.fourth-right {
+    grid-area: right;
+    justify-self: right;
+}
+
+.fourth-left img {
+    height: 100%;
+    width: 100%;
+}
+
+.fourth-right > button {
+    height: 8vh;
+    width: 10vw;
+    background-color: #EEBF3A;
+    overflow: inherit;
+    color: white;
+    font-size: 15pt;
+    min-width: 100px;
+    min-height: 50px;
+}
+
+footer {
+    margin-top: 7vh;
+    height: 50vh;
+    background-color: black;
+}
+
+.foot-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    color: white;
+}
+
+.foot-container div {
+    margin-top: 5vh;
+}
+
+#foot1 img {
+    height: 35vh;
+    width: 100%;
+}
+
+#foot1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11vh;
+}
+
+#foot2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8vh;
+}
+
+#foot2 div {
+    flex-grow: 4;
+}
+
+#info {
+    font-size: 45px;
+}
+
+#foot3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+#foot3 div {
+    flex-grow: 5;
+}
+
+#shows {
+    font-size: 45px;
+}
+
+#foot4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+#foot4 div {
+    flex-grow: 5;
+}
+
+#social {
+    font-size: 45px;
+}
